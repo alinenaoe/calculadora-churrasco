@@ -10,6 +10,14 @@ body {
     padding-left: 80px;
 }
 
+@media (max-width: 767.98px) { 
+
+    .container {
+        text-align: center;
+    }
+
+}
+
 .content {
     min-height: 100vh;
     height: 100%;
@@ -30,6 +38,7 @@ input {
     height: 50px;
     width: 85%;
     color: #F7F7F7;
+    /* min-width: 120px; RECOLOCAR ESPECIFICO*/
 }
 
 label {
@@ -42,6 +51,29 @@ label {
     width: 20px;
 }
 
+.custom-checkbox {
+    margin-left: calc(25% + 15px);
+}
+
+@media (max-width: 991.98px) { 
+
+    .custom-checkbox {
+        margin-left: 15px;
+    }
+    
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    background-color: #5f248b;
+    border: 1.8px solid;
+}
+
+.custom-checkbox .custom-control-label::after {
+    border-radius: 0;
+    background-color: #5f248b;
+    border: 1.8px solid;
+}
 
 #botaoCalcular {
     background: #63DC3E 0% 0% no-repeat padding-box;
@@ -51,6 +83,7 @@ label {
     width: 200px;
     height: 50px;
     color: #731AB7;
+    font-size: 1.3rem;
 }
 
 #resultado {
@@ -59,4 +92,5 @@ label {
     border-radius: 5px;
     padding:10px;
     display: none;
+    margin: 0;
 }
